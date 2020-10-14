@@ -1,0 +1,7 @@
+.task__container {
+    width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: darkgray;
+    border-radius: 20px;
+}
