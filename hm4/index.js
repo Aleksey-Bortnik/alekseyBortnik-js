@@ -14,3 +14,16 @@ function taskOneCalculate() {
   const numberResultElement = document.getElementById("task-1-result");
   numberResultElement.innerText = resultText;
 }
+
+function taskTwoCheckBtn() {
+  const taskTwoAgeInput = document.getElementById("task-2-age-input");
+  const inputValue = +taskTwoAgeInput.value;
+  let resultText;
+  if (inputValue >= 0 && inputValue <= 120) {
+    resultText = "Жив";
+  } else {
+    resultText = "ggwp";
+  }
+  const resultElement = document.getElementById("task-2-result");
+  resultElement.innerText = resultText;
+}
