@@ -61,3 +61,64 @@ function taskFourBtnOnClick() {
   const resultElement = document.getElementById("task-4-result");
   resultElement.innerText = resultText;
 }
+
+function taskFiveBtnOnClick() {
+  const inputAxis = {
+    x: +document.getElementById("task-5-x-input").value,
+    y: +document.getElementById("task-5-y-input").value,
+  };
+
+  let xSign, ySign;
+  if (inputAxis.x > 0) {
+    xSign = "+";
+  } else if (inputAxis.x === 0) {
+    xSign = "0";
+  } else {
+    xSign = "-";
+  }
+
+  if (inputAxis.y > 0) {
+    ySign = "+";
+  } else if (inputAxis.y === 0) {
+    ySign = "0";
+  } else {
+    ySign = "-";
+  }
+
+  const coordinatesSigns = xSign + ySign;
+
+  let resultText;
+
+  switch (coordinatesSigns) {
+    case "++":
+      resultText = "Точка находится в первой четверти.";
+      break;
+    case "+0":
+      resultText = "Точка лежит на оси Х, в её положительной части.";
+      break;
+    case "+-":
+      resultText = "Точка лежит в четвёртой четверти.";
+      break;
+    case "0+":
+      resultText = "Точка лежит на оси Y, в её положительной части.";
+      break;
+    case "00":
+      resultText = "Точка находится в начале координат.";
+      break;
+    case "0-":
+      resultText = "Точка лежит на оси Y, в её отрицательной части.";
+      break;
+    case "-+":
+      resultText = "Точка находится во второй четверти.";
+      break;
+    case "-0":
+      resultText = "Точка лежит на оси Х, в её отрицательной части.";
+      break;
+    case "--":
+      resultText = "Точка находится в третьей четверти.";
+      break;
+  }
+
+  const numberResultElement = document.getElementById("task-5-result");
+  numberResultElement.innerText = resultText;
+}
