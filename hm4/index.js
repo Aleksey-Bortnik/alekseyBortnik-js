@@ -122,3 +122,28 @@ function taskFiveBtnOnClick() {
   const numberResultElement = document.getElementById("task-5-result");
   numberResultElement.innerText = resultText;
 }
+
+function taskSixOnClick() {
+  const months = [
+    "январь",
+    "февраль",
+    "март",
+    "апрель",
+    "май",
+    "июнь",
+    "июль",
+    "август",
+    "сентябрь",
+    "октябрь",
+    "ноябрь",
+    "декабрь",
+  ];
+  const monthNumber = +document.getElementById("task-6-month-input").value;
+  let monthName = months[monthNumber - 1];
+  if (!monthName) {
+    monthName = "Номер этого месяца будет через год, или не будет  ¯\\_(ツ)_/¯"
+  }
+  const resultElement = document.getElementById("task-6-result");
+  resultElement.innerText = monthName;
+}
+
