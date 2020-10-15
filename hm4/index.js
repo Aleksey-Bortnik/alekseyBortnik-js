@@ -27,3 +27,11 @@ function taskTwoCheckBtn() {
   const resultElement = document.getElementById("task-2-result");
   resultElement.innerText = resultText;
 }
+
+function taskThreeBtnOnClick() {
+  const taskThreeNumberInput = document.getElementById("task-3-number-input");
+  const inputValue = +taskThreeNumberInput.value;
+  let resultText = Math.abs(inputValue);
+  const resultElement = document.getElementById("task-3-result");
+  resultElement.innerText = resultText;
+}
