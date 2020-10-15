@@ -37,7 +37,7 @@ function taskThreeBtnOnClick() {
 }
 
 function taskFourBtnOnClick() {
-  const inputDate = {
+  const inputTime = {
     hours: +document.getElementById("task-4-hour-input").value,
     minutes: +document.getElementById("task-4-minutes-input").value,
     seconds: +document.getElementById("task-4-seconds-input").value,
@@ -46,12 +46,12 @@ function taskFourBtnOnClick() {
   let resultText;
 
   if (
-    inputDate.hours >= 0 &&
-    inputDate.hours <= 23 &&
-    inputDate.minutes >= 0 &&
-    inputDate.minutes <= 59 &&
-    inputDate.seconds >= 0 &&
-    inputDate.seconds <= 59
+    inputTime.hours >= 0 &&
+    inputTime.hours <= 23 &&
+    inputTime.minutes >= 0 &&
+    inputTime.minutes <= 59 &&
+    inputTime.seconds >= 0 &&
+    inputTime.seconds <= 59
   ) {
     resultText = "Время валидное";
   } else {
