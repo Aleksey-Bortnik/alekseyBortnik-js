@@ -34,6 +34,23 @@
         <p id="task-3-result"></p>
     </div>
 
+    <div class="task__container">
+        <h4>Task-4</h4>
+        <p>Введите значение...</p>
+
+        <!-- can be make like this (without JS) -->
+        <!-- <input id="task-4-time-input" type="time" step="1"> -->
+
+        <div class="time-inputs-background">
+            <input id="task-4-hour-input" class="time-input" type="number" value="0">:
+            <input id="task-4-minutes-input" class="time-input" type="number" value="0">:
+            <input id="task-4-seconds-input" class="time-input" type="number" value="0">
+        </div>
+
+        <button id="task-4-check-time-btn" onclick="taskFourBtnOnClick()">Проверить</button>
+        <p id="task-4-result"></p>
+    </div>
+
     <script src="./index.js"></script>
 </body>
 

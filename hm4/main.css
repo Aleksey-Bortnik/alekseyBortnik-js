@@ -5,3 +5,15 @@
     background-color: darkgray;
     border-radius: 20px;
 }
+
+.time-input {
+    margin: 0;
+    width: 35px;
+    border: none;
+}
+
+.time-inputs-background {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
